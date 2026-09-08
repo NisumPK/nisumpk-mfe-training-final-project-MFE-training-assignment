@@ -77,7 +77,7 @@ You may create additional MFEs if your chosen business scenario requires them.
              ┌──────▼──────┐                   ┌──────▼──────┐
              │    MFE 1    │                   │    MFE 2    │
              │             │                   │             │
-             │  Provider  │                   │  Provider   │
+             │  Provider   │                   │  Provider   │
              └─────────────┘                   └─────────────┘
 ```
 
@@ -1509,6 +1509,12 @@ The final project should demonstrate not only **how to build Micro Frontends**, 
 - Keep environment configuration separate from source code.
 - Make your CI pipeline run on every Pull Request.
 - Document your architectural decisions.
+
+---
+
+## 📅 Deadline
+
+Please submit your GitHub repo link by: 18 - September - 2026
 
 ---
 
