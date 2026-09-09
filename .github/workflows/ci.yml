@@ -6,7 +6,8 @@ on:
       - main
       - feature/final-project-assignment
   pull_request:
-    branches: -main
+    branches:
+      - main
 
 permissions:
   contents: read
