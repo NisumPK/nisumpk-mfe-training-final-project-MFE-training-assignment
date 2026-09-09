@@ -1,0 +1,10 @@
+{
+  "latestErrorEvent": {
+    "code": "TYPE-001",
+    "message": "Failed to generate type declaration. Execute the below cmd to reproduce and fix the error. #TYPE-001\nargs: {\"cmd\":\"/opt/homebrew/Cellar/node/26.3.0/bin/node /Users/hqadeer/Desktop/mfe-training/nisumpk-mfe-training-final-project-MFE-training-assignment/node_modules/typescript/bin/tsc --project /Users/hqadeer/Desktop/mfe-training/nisumpk-mfe-training-final-project-MFE-training-assignment/apps/products-mfe/node_modules/.federation/tsconfig.264365ca1b6574f9274a87a4423c1a22.json\"}\nView the docs to see how to solve: https://module-federation.io/guide/troubleshooting/type#type-001",
+    "args": {
+      "cmd": "/opt/homebrew/Cellar/node/26.3.0/bin/node /Users/hqadeer/Desktop/mfe-training/nisumpk-mfe-training-final-project-MFE-training-assignment/node_modules/typescript/bin/tsc --project /Users/hqadeer/Desktop/mfe-training/nisumpk-mfe-training-final-project-MFE-training-assignment/apps/products-mfe/node_modules/.federation/tsconfig.264365ca1b6574f9274a87a4423c1a22.json"
+    },
+    "timestamp": 1788956912017
+  }
+}

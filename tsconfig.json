@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "useDefineForClassFields": true,
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": false,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "types": ["node", "vite/client", "vitest/globals", "@testing-library/jest-dom"],
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": {
+      "@nisum/shared-types": ["libs/shared-types/src/index.ts"],
+      "@nisum/shared-ui": ["libs/shared-ui/src/index.tsx"],
+      "@nisum/events": ["libs/events/src/index.ts"],
+      "@nisum/state": ["libs/state/src/index.ts"],
+      "@nisum/api-client": ["libs/api-client/src/index.ts"]
+    }
+  },
+  "include": ["apps", "libs", "vite.config.ts", "vitest.config.ts", "eslint.config.js"]
+}

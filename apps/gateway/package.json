@@ -1,0 +1,18 @@
+{
+  "name": "@nisum/gateway",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "dependencies": {
+    "@nisum/api-client": "1.0.0",
+    "@nisum/events": "1.0.0",
+    "@nisum/shared-ui": "1.0.0",
+    "@nisum/state": "1.0.0",
+    "react-router-dom": "^7.1.5"
+  }
+}
