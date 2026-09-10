@@ -1,0 +1,341 @@
+.app-shell {
+  min-height: 100vh;
+  background: #f4f7fb;
+}
+.topbar {
+  height: 68px;
+  background: #102961;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1.5rem;
+  color: #fff;
+}
+.brand {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  gap: 0.65rem;
+  align-items: center;
+  font-size: 1.05rem;
+}
+.brand-mark {
+  display: grid;
+  place-items: center;
+  background: #32c9a5;
+  color: #072037;
+  width: 30px;
+  height: 30px;
+  border-radius: 9px;
+  font-weight: 900;
+}
+.topbar-actions,
+.account {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.health {
+  color: #c3d2ef;
+  font-size: 0.82rem;
+}
+.health i {
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  background: #37d7aa;
+  border-radius: 50%;
+  margin-right: 0.35rem;
+}
+.theme-button {
+  padding: 0.48rem 0.65rem;
+}
+.shell-body {
+  min-height: calc(100vh - 68px);
+  display: grid;
+  grid-template-columns: 210px minmax(0, 1fr) 290px;
+}
+.navigation {
+  border-right: 1px solid #dfe6f1;
+  background: #fff;
+  padding: 1.4rem 0.9rem;
+  display: flex;
+  flex-direction: column;
+}
+.nav-caption,
+.eyebrow {
+  color: #64718a;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  font-weight: 800;
+  margin: 0 0 0.6rem;
+}
+.navigation nav {
+  display: grid;
+  gap: 0.3rem;
+}
+.navigation nav a {
+  text-decoration: none;
+  color: #40516e;
+  padding: 0.65rem 0.7rem;
+  border-radius: 8px;
+  font-weight: 650;
+  display: flex;
+  justify-content: space-between;
+}
+.navigation nav a.active,
+.navigation nav a:hover {
+  background: #edf3ff;
+  color: #1748bf;
+}
+.nav-count,
+.count-badge {
+  font-size: 0.72rem;
+  min-width: 1.3rem;
+  padding: 0.1rem 0.35rem;
+  text-align: center;
+  border-radius: 999px;
+  background: #d9e6ff;
+  color: #1748bf;
+}
+.architecture-note {
+  margin-top: auto;
+  border-top: 1px solid #e7ebf4;
+  padding: 1rem 0.2rem 0;
+  color: #5b6982;
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+.architecture-note p {
+  margin: 0;
+}
+.remote-region {
+  min-width: 0;
+}
+.demo-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding: 0.65rem 1.5rem;
+  color: #586783;
+  border-bottom: 1px solid #e3e9f3;
+  font-size: 0.78rem;
+  background: #fafcff;
+}
+.config-warning {
+  margin: 0.75rem 1.5rem 0;
+  color: #9a6114;
+  font-size: 0.85rem;
+}
+.side-region {
+  padding: 1.1rem 0.9rem;
+  background: #f8faff;
+  border-left: 1px solid #e0e7f1;
+}
+.cart-panel .card {
+  padding: 1rem;
+}
+.panel-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.panel-title h2 {
+  font-size: 1rem;
+  margin: 0.1rem 0 0.3rem;
+}
+.panel-title a {
+  color: #2156d9;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+.checkout-button {
+  width: 100%;
+  margin-top: 1rem;
+}
+.clear-button {
+  margin: 0.7rem 0.5rem 0 0;
+}
+.cart-page-card {
+  padding: 1.1rem;
+  max-width: 720px;
+}
+.checkout-progress {
+  padding: 1.3rem;
+  text-align: center;
+}
+.order-list {
+  display: grid;
+  gap: 0.7rem;
+  max-width: 720px;
+}
+.order-card {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.order-card h2 {
+  font-size: 1rem;
+  margin: 0.4rem 0 0.2rem;
+}
+.search {
+  border: 1px solid #cfd9ea;
+  border-radius: 8px;
+  padding: 0.62rem 0.75rem;
+  min-width: 200px;
+  outline-color: #2156d9;
+}
+.gateway-toast {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 5;
+  border-radius: 10px;
+  padding: 0.85rem 1.1rem;
+  color: #fff;
+  background: #102961;
+  box-shadow: 0 8px 25px rgba(12, 30, 70, 0.22);
+}
+.gateway-toast.success {
+  background: #087a55;
+}
+.gateway-toast.error {
+  background: #a32943;
+}
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(8, 22, 50, 0.54);
+  display: grid;
+  place-items: center;
+  z-index: 10;
+}
+.login-modal {
+  width: min(390px, calc(100vw - 2rem));
+  padding: 1.4rem;
+  position: relative;
+}
+.login-modal h2 {
+  margin: 0.1rem 0 0.4rem;
+}
+.login-modal p {
+  color: #60708b;
+  line-height: 1.45;
+}
+.login-modal label {
+  display: grid;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+.login-modal input {
+  border: 1px solid #cbd6e8;
+  border-radius: 8px;
+  padding: 0.65rem;
+}
+.modal-close {
+  position: absolute;
+  right: 0.65rem;
+  top: 0.55rem;
+  background: none;
+  border: 0;
+  font-size: 1.5rem;
+  color: #66738a;
+}
+.form-error {
+  color: #a32943 !important;
+}
+.account {
+  font-size: 0.86rem;
+}
+.account .button {
+  padding: 0.48rem 0.7rem;
+}
+[data-theme='dark'] {
+  color: #edf3ff;
+  background: #111c30;
+}
+.app-shell[data-theme='dark'],
+[data-theme='dark'] .app-shell {
+  background: #111c30;
+}
+.app-shell[data-theme='dark'] .navigation,
+[data-theme='dark'] .navigation,
+[data-theme='dark'] .card {
+  background: #172640;
+  color: #edf3ff;
+  border-color: #2d4061;
+}
+.app-shell[data-theme='dark'] .side-region,
+[data-theme='dark'] .side-region,
+[data-theme='dark'] .demo-strip {
+  background: #142239;
+  border-color: #2d4061;
+}
+.app-shell[data-theme='dark'] .navigation nav a,
+[data-theme='dark'] .navigation nav a {
+  color: #d3def4;
+}
+.app-shell[data-theme='dark'] .mfe-heading p,
+[data-theme='dark'] .muted {
+  color: #b5c2da;
+}
+.app-shell[data-theme='dark'] .product-icon,
+[data-theme='dark'] .tag {
+  background: #23395f;
+}
+.app-shell[data-theme='dark'] .product-copy p,
+[data-theme='dark'] .price {
+  color: #e5ecff;
+}
+@media (max-width: 1050px) {
+  .shell-body {
+    grid-template-columns: 190px minmax(0, 1fr);
+  }
+  .side-region {
+    display: none;
+  }
+}
+.side-region .inline-error {
+  font-size: 0.8rem;
+}
+.side-region .inline-error .button {
+  font-size: 0.8rem;
+}
+@media (max-width: 700px) {
+  .topbar {
+    padding: 0 0.9rem;
+  }
+  .brand b,
+  .health {
+    display: none;
+  }
+  .shell-body {
+    display: block;
+  }
+  .navigation {
+    padding: 0.55rem 0.75rem;
+    border-bottom: 1px solid #dfe6f1;
+  }
+  .navigation nav {
+    display: flex;
+    overflow: auto;
+  }
+  .navigation nav a {
+    white-space: nowrap;
+  }
+  .architecture-note {
+    display: none;
+  }
+  .demo-strip {
+    padding: 0.55rem 1rem;
+  }
+  .topbar-actions {
+    gap: 0.35rem;
+  }
+  .account span {
+    display: none;
+  }
+}
